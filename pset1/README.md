@@ -2,7 +2,7 @@
 
 ## 📘 Overview
 This week introduces programming in **C**, focusing on syntax, data types, loops, conditionals, and basic problem-solving.  
-Eercises three exercises: **Hello**, **Mario**, and **Credit**.
+There are three exercises: **Hello**, **Mario**, and **Credit**.
 
 ---
 
