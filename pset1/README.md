@@ -1,123 +1,124 @@
-CS50x — Week 1 — C
-🧾 Overview
+# 🧾 CS50x Week 1 — C
 
-Week 1 introduces programming in C — focusing on basic syntax, types, functions, loops, and conditionals.
-This problem set includes three main exercises: Hello, Mario, and Credit.
+## 📘 Overview
+This week introduces programming in **C**, focusing on syntax, data types, loops, conditionals, and basic problem-solving.  
+Eercises three exercises: **Hello**, **Mario**, and **Credit**.
 
-💬 1. Hello
-Description
+---
 
-Your first C program!
-Prompts the user for their name and greets them with “hello, name”.
+## 🖐️ 1. Hello
 
-Usage
+### 📝 Description
+The classic first program!  
+Prompts the user for their name and prints a personalized greeting.
+
+### 💻 Example
+```bash
 $ ./hello
 What is your name?
 Clive
 hello, Clive
+```
 
-Concepts
+### 💡 Concepts
+- Input and output (`get_string`, `printf`)
+- Strings and format specifiers (`%s`)
+- Basic program structure in C
 
-Input and output with get_string and printf
+---
 
-Strings and format specifiers
+## 🧱 2. Mario
 
-🧱 2. Mario (more/less)
-Description
-
-Recreates the pyramid patterns from Super Mario Bros. using hashes (#).
+### 📝 Description
+Recreates pyramid patterns from *Super Mario Bros.* using `#` characters.  
 There are two versions:
+- **Less**: Left-aligned half-pyramid
+- **More**: Double-sided pyramid
 
-mario less — a left-aligned half-pyramid.
-
-mario more — a double-sided pyramid.
-
-Usage (less)
+### 💻 Example — Less Version
+```bash
 $ ./mario
 Height: 4
    #
   ##
  ###
 ####
+```
 
-Usage (more)
+### 💻 Example — More Version
+```bash
 $ ./mario
 Height: 4
    #  #
   ##  ##
  ###  ###
 ####  ####
+```
 
-Concepts
+### 💡 Concepts
+- Nested `for` loops
+- Input validation (height between 1–8)
+- Conditional printing of spaces and hashes
 
-Nested for loops
+---
 
-Conditional logic
+## 💳 3. Credit
 
-Input validation
+### 📝 Description
+Validates a credit card number using **Luhn’s Algorithm** and identifies its type.  
+Supports **AMEX**, **MASTERCARD**, and **VISA** cards.
 
-Printing patterns
-
-💳 3. Credit
-Description
-
-Checks the validity of a credit card number using Luhn’s Algorithm and identifies its type:
-
-AMEX (15 digits, starts with 34 or 37)
-
-MASTERCARD (16 digits, starts with 51–55)
-
-VISA (13 or 16 digits, starts with 4)
-
-Usage
+### 💻 Example
+```bash
 $ ./credit
 Number: 378282246310005
 AMEX
-
+```
 
 If invalid:
-
+```bash
 $ ./credit
 Number: 123456789
 INVALID
+```
 
-Concepts
+### 💡 Concepts
+- Loops and arithmetic with `long` values
+- Modular operations (`%`)
+- Conditional branching
+- Implementing algorithms step by step
 
-Loops and arithmetic with long values
+---
 
-Conditionals
+## 🧠 Key Takeaways
+- Compiling with `make` and executing with `./program`
+- Handling user input safely
+- Working with loops and conditionals
+- Applying algorithms (like checksum validation)
+- Building structured, readable programs in C
 
-Modular arithmetic (%)
+---
 
-Luhn’s checksum algorithm
+## ⚙️ Running the Programs
 
-🧠 Key Learning Outcomes
-
-Understand how to compile and run C programs with make and ./program.
-
-Work with variables, loops, conditionals, and user input.
-
-Learn to debug using printf statements and the debugger.
-
-Get familiar with algorithmic thinking (Credit’s checksum).
-
-⚙️ How to Run Programs
-
-Compile each program with:
-
+Compile each program:
+```bash
 make programname
+```
 
-
-Then run it:
-
+Run the executable:
+```bash
 ./programname
-
+```
 
 Examples:
-
+```bash
 make hello
 ./hello
+
 make mario
 ./mario
+
 make credit
 ./credit
+```
