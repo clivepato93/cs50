@@ -1,0 +1,11 @@
+sort1 uses: bubble sort
+
+How do you know?: it completes the fastest when using the sorted txt file
+
+sort2 uses: merge sort
+
+How do you know?: due to how quick it processes the reversed files
+
+sort3 uses: selection sort
+
+How do you know?: due to how slower it processes the reversed files compared to the second sort
